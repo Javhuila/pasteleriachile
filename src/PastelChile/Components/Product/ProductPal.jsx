@@ -13,10 +13,10 @@ function ProductPal() {
         </div>
         <div className="text-002">
           <h1>Nombre  del Producto</h1>
-          <p>
+          <p className='text-006'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque explicabo quibusdam consequatur at harum, corrupti dolores, commodi omnis tenetur officia, ratione doloribus eligendi. Pariatur velit blanditiis explicabo suscipit alias.
           </p>
-          <h5>Precio:<span>$ 25.50</span></h5>
+          <h5 className='text-006'>Precio:<span>$ 25.50</span></h5>
         </div>
       </div>
       <div>

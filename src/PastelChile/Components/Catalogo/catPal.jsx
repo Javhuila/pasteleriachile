@@ -5,32 +5,36 @@ import PastelImg004 from '../../../PastelImg/pastch004.jpg';
 import PastelImg005 from '../../../PastelImg/pastch005.jpg';
 import PastelImg006 from '../../../PastelImg/pastch006.jpg';
 import CardsPast from './CardsPast';
-import {FaPlayCircle, FaPauseCircle} from 'react-icons/fa';
-// https://www.youtube.com/watch?v=3oIIS_hll2I
+import { FaPlayCircle, FaPauseCircle } from 'react-icons/fa';
+import Footer from '../Navbar/Footer';
+
 const CatPal = () => {
+
   const [playSlider, setPlaySlider] = useState(true);
 
   return (
     <Fragment>
       <div>
         <NabvarPal />
-        <div className="slider-container">
-          {playSlider
-            ?
-            <FaPauseCircle className="fa-icon1" onClick={() => setPlaySlider(!playSlider)} />
-            :
-            <FaPlayCircle className="fa-icon1" onClick={() => setPlaySlider(!playSlider)} />
+        <div className='body-slider'>
+          <div className="slider-container">
+            {playSlider
+              ?
+              <FaPauseCircle className="fa-icon1" onClick={() => setPlaySlider(!playSlider)} />
+              :
+              <FaPlayCircle className="fa-icon1" onClick={() => setPlaySlider(!playSlider)} />
 
-          }
-          <div className={playSlider ? "slider play-run" : "slider play-stop"}>
-            <div className='slider-past'>
-              <img src={PastelImg004} alt="slide1" />
-            </div>
-            <div className='slider-past'>
-              <img src={PastelImg005} alt="slide1" />
-            </div>
-            <div className='slider-past'>
-              <img src={PastelImg006} alt="slide1" />
+            }
+            <div className={playSlider ? "slider play-run" : "slider play-stop"}>              
+              <div className='slider-past'>
+                <img src={PastelImg004} alt="slide1" />
+              </div>
+              <div className='slider-past'>
+                <img src={PastelImg005} alt="slide1" />
+              </div>
+              <div className='slider-past'>
+                <img src={PastelImg006} alt="slide1" />
+              </div>
             </div>
           </div>
         </div>
@@ -84,13 +88,14 @@ const CatPal = () => {
             <CardsPast />
           </div>
         </div>
+        <Footer />
       </div>
     </Fragment>
   )
 }
 
 export default CatPal
-
+// https://www.youtube.com/watch?v=3oIIS_hll2I - Slider
 // https://www.youtube.com/watch?v=VZR0m5F4lWI
 // https://www.youtube.com/watch?v=KROfo7vuIGY
 // https://www.youtube.com/watch?v=kKrkQcpo-rE

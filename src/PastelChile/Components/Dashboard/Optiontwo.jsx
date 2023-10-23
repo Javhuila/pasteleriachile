@@ -1,8 +1,7 @@
 import React from 'react';
-import Img1 from './../compufetimages/com1fet.jpg';
 
 // https://www.youtube.com/watch?v=ng5t_R4zuSc
-function CrudProduc() {
+function Optiontwo() {
   return (
     <div>
         <div>
@@ -103,4 +102,4 @@ function CrudProduc() {
   )
 }
 
-export default CrudProduc
+export default Optiontwo

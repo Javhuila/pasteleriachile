@@ -29,7 +29,7 @@ function Regis() {
                                     </form>
                                     <p>
                                         Inicia sesión,<h1> </h1>
-                                        <Link to="/Iniciar-Sesion" className="link002 link003">ahora!</Link>
+                                        <Link to="/Iniciar_Sesion" className="link002 link003">ahora!</Link>
                                     </p>
                                 </div>
                             </div>
