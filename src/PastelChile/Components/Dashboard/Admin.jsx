@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Optiontwo from './Optiontwo';
 import Optionone from './Optionone';
+import Optionthree from './Optionthree';
 
 
 function Admin() {
@@ -47,10 +48,15 @@ function Admin() {
                     <div className="message">
                         <div className="circle"></div>
                         <div className="dp">
+                        <Link to="Iniciar_Sesion" className="link005">
                             <img src=
                                 "https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
                                 className="dpicn"
                                 alt="dp" />
+                            <ul className='dp-ul'>
+                                <li className='dp-li'>Cerrar Sesión</li>
+                            </ul>
+                        </Link>
                         </div>
                     </div>
 
@@ -102,18 +108,7 @@ function Admin() {
                     </div>
                     <div className="main-dash">
 
-                        <div className="searchbar2">
-                            <input type="text"
-                                name=""
-                                id=""
-                                placeholder="Search" />
-                            <div className="searchbtn">
-                                <img src=
-                                    "https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
-                                    className="icn srchicn"
-                                    alt="search-button" />
-                            </div>
-                        </div>
+                        
                         {/* Aqui va el box-container y report-container*/}
                         {activeTab === 1 && (
                             <Optionone />
@@ -124,7 +119,9 @@ function Admin() {
                             </div>
                         )}
                         {activeTab === 3 && (
-                            <div><h2>Contenido del primer 3</h2></div>
+                            <div>
+                                <Optionthree />
+                            </div>
                         )}
                         {/* {activeTab === 4 && (
                             <div><h2>Contenido del primer 4</h2></div>
