@@ -36,6 +36,3 @@ function cardProdu() {
 }
 
 export default cardProdu
-
-// https://medium.com/geekculture/33-blog-card-css-for-web-design-726a037217b5
-// https://www.youtube.com/watch?app=desktop&v=tR5-3RY1kJg

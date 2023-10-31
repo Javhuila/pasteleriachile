@@ -9,6 +9,7 @@ import qsPal from '../PastelChile/Components/QSPal/qsPal';
 import Inisesion from '../PastelChile/Components/Login/Inisesion';
 import Regis from '../PastelChile/Components/Login/Regis';
 import Admin from '../PastelChile/Components/Dashboard/Admin';
+import Pruebas from '../PastelChile/Components/Splash/Pruebas';
 
 
 const PublicRoutess = () => {
@@ -23,6 +24,7 @@ const PublicRoutess = () => {
             <PublicRoute exact path="/catalogo" component={CatPal} />
             <PublicRoute exact path="/produ" component={ProductPal} />
             <PublicRoute exact path="/contactenos" component={qsPal} />
+            <PublicRoute exact path="/prueba" component={Pruebas} />
             <Redirect path="/**" to="/" />
         </Switch>
     )

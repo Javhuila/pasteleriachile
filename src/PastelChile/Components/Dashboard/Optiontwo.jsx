@@ -3,7 +3,6 @@ import Modal_Optiontwo from './Modal_Optiontwo';
 import Modal_two_Optiontwo from './Modal_two_Optiontwo';
 import Modal_three_Optiontwo from './Modal_three_Optiontwo';
 
-// https://www.youtube.com/watch?v=ng5t_R4zuSc
 function Optiontwo() {
     return (
         <div>
